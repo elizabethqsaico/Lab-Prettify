@@ -3,6 +3,7 @@
 } */
 body{
 	font-family: Oswald;
+	background-image: url(../images/background.jpg);
 }
 a{
 	text-decoration: none;
@@ -13,6 +14,9 @@ img{
 }
 .text-center{
 	text-align: center;
+}
+.display-ib{
+	display: inline-block;
 }
 .text-right{
 	text-align: right;
@@ -29,9 +33,22 @@ img{
 .mgb-2{
 	margin-bottom: 2%;
 }
+.mgl-2{
+	margin-left: 2%;
+}
 .mg-2{
 	margin: 2%;
 }
+.font-style{
+	border: 2px solid #000;
+	background: #000;
+	opacity: 0.4;
+}
+.font-style:hover{
+	opacity: 0.7;
+	font-size: 17px;
+}
+
 .list-unstyle{
 	list-style: none;
 	margin:0px;
@@ -45,34 +62,48 @@ img{
 	color: #8A0886;
 }
 .background-img{
-	background-image: url(../images/background.jpg);
+	/*background-image: url(../images/background.jpg);*/
 }
+header{
+	background: #000;
+}
+
 #about{
-	background-image: url(../images/tile1.png);
-	background-repeat: repeat;
+	/*background-image: url(../images/tile1.png);
+	background-repeat: repeat;*/
 }
 #contact{
-	background-image: url(../images/tile2.png);
-	background-repeat: repeat;
+	background-image: url(../images/tile1.png);
+	background-repeat: repeat; 
 }
 #contact img{
 	padding: 1%;
-	width: 128px;
+
 }
 #about img{
 	max-width: 50%;
 	max-height: 50%;
-	border: 2px solid #BDBDBD;
-	border-radius: 2%;
+	border-radius: 100%;
+}
+#favourities{
+	background-image: url(../images/tile1.png);
+	background-repeat: repeat;
 }
 #favourities img{
-	max-width: 24%;
-	max-height: 24%;
+	max-width: 20%;
+	max-height: 20%;
 	border-radius: 100%;
 }
 .list-favourities{
-	overflow: scroll;
-	height: 240px;
+	overflow: auto;
+	height: 220px;
+}
+.hoverimages{
+	transform:scale(1);
+}
+.hoverimages:hover{
+	transform:scale(1.2);
+	border: none;
 }
 .brd-purple{	
 	border: 1px solid #8A0886;
@@ -81,4 +112,27 @@ img{
 #favourities .list-unstyle li{
 	padding: 0;
 	margin: 0;
+}
+.contact-me{
+	width: 128px;
+	height: 128px;
+	overflow: hidden;
+}
+.contact-me img{
+	width: 128px;
+	height: 256px;
+	opacity: 0.4;
+}
+.contact-me img {
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform .2s ease-in-out;
+}
+.contact-me img:hover {
+    transform: translate3d(0px, -150px, 0px);
+    opacity: 1;
+}
+.list-contact{
+	border: 2px solid #BDBDBD;
+	padding: 1%;
+	border-radius: 5%;
 }
